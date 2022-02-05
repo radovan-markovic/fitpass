@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "04b8c765-e44c-411e-b49d-8d4b67c87747",
+		"name": "Fitpass",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Correct request",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/reception?object_uuid=3434&card_uuid=524540",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reception"
+					],
+					"query": [
+						{
+							"key": "object_uuid",
+							"value": "3434"
+						},
+						{
+							"key": "card_uuid",
+							"value": "524540"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
