@@ -27,6 +27,9 @@ class UserReception{
         if ($response == 200){
             if ( $this->checkUserTodayCheckIn($request->card_uuid, $request->object_uuid) == false ){
                 $this->logCheckIn($request->card_uuid, $request->object_uuid);
+            }else{
+                $data = [];
+                $data['message'] = 'You already used this object today.';
             }
         }
 
