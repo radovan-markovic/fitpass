@@ -2,10 +2,12 @@
 Check in users to sport centers and log number of check in.
 
 ## Installation
-This project using composer.
+This project using composer. In CLI root project execute:
 ```
 $ composer install
 ```
+
+Set up database credentials in .env file and in CLI root of project execute:
 ```
 $ php artisan migrate
 $ php artisan db:seed
